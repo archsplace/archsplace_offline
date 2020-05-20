@@ -9,6 +9,26 @@
     <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
     <title>Maintenance | Archsplace</title>
     <style>
+      @font-face {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 300;
+        font-display: auto;
+        src: local("Roboto Light"), local("Roboto-Light"),
+          url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmSU5fBBc4.woff2)
+            format("woff2");
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+          U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+          U+FEFF, U+FFFD;
+      }
+      body {
+        position: relative;
+        background-color: #3a3246;
+        font-family: "Roboto", sans-serif;
+        font-size: 12px;
+        font-weight: 300;
+        color: white;
+      }
       .archsplace-maintenance {
         position: relative;
         display: -webkit-flex;
@@ -22,6 +42,7 @@
         align-items: center;
         margin: 0 auto;
         width: 100%;
+        height: calc(100vh - 7rem);
       }
       img {
         display: -webkit-flex;
@@ -29,17 +50,19 @@
         display: flex;
         justify-content: center;
         width: 4rem;
-        margin: 5rem auto;
+        margin: 7rem auto;
       }
       h1, p {
         text-align: center;
+        padding: 0 1rem;
       }
     </style>
   </head>
   <body>
-    <main class='archsplace-maintenance'></main>
-    <img src="./archsplace-round.png" alt="Archplace logo maintenance">
-    <h1>Archsplace is currently offline for maintenance</h1>
-    <p>Please check the updated status in our social network. We will come back soon with a lot of new features :)</p>
+    <main class='archsplace-maintenance'>
+      <img src="./archsplace-144x144.png" alt="Archplace logo maintenance" />
+      <h1>Archsplace is currently offline for maintenance</h1>
+      <p>Please check the updated status in our social network. We will come back soon with a lot of new features :)</p>
+    </main>
   </body>
 </html>
